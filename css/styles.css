@@ -1,7 +1,7 @@
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: black;
+  color: #222222;
   text-align: right;
 }
 
@@ -19,6 +19,18 @@ h3 {
 
 p {
   text-align: center;
+}
+
+header {
+  display: flex;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
 }
 
 .contacts {
@@ -39,14 +51,6 @@ p {
   width: 40%;
 }
 
-.image{
-  justify-content: center; 
-}
-
-.header {
-  display: flex;
-}
-
 .divider {
   border-bottom: 0.2em solid grey;
 }
@@ -58,32 +62,27 @@ p {
   padding-top: 1em;
 }
 
-.works {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: stretch;
-}
-
 .box {
   padding: 1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1px) and (max-width: 768px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   h2, h3, p {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   h3 {
     text-align: center;
   }
-  .header {
+  header {
     flex-direction: column;
   }
   .title, .logo {
     width: 100%;
+  }
+  .container {
+    padding: 0.5em;
   }
 }
